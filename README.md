@@ -47,7 +47,8 @@
 ## Cómo ver el sitio
 Este portafolio está alojado en **GitHub Pages**. Puedes acceder directamente desde el siguiente enlace:
 
-[Portafolio de Rosa Rubio](https://paulinarubiop.github.io/portafolio/)
+[Portafolio de Rosa Rubio](https://paulinarubiop.github.io/Portafolio/)
+
 
 ---
 
