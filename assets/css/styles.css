@@ -1,0 +1,242 @@
+:root {
+  --primary-color: #FF6B6B;
+  --background-color: #252532;
+  --secondary-background: #2E2E3D;
+  --text-color: #FFFFFF;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: rgba(37, 37, 50, 0.8) !important;
+  backdrop-filter: blur(10px);
+}
+
+.navbar-item {
+  color: var(--text-color) !important;
+}
+
+.navbar-item:hover,
+.navbar-item:focus {
+  background-color: rgba(255, 107, 107, 0.2) !important;
+  color: var(--primary-color) !important;
+}
+
+.navbar-burger {
+  color: var(--text-color);
+}
+
+/* Header styles */
+#home {
+  display: flex;
+  align-items: center;    /* Centra verticalmente los elementos */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  text-align: center;     /* Centra el texto */
+  background: linear-gradient(rgba(37, 37, 50, 0.8), rgba(37, 37, 50, 0.8)), url('../images/paisaje.png');
+  background-color: var(--background-color);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Altura completa del viewport */
+  margin: 0;
+  padding: 0;
+}
+
+#home .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  height: 100%;           /* Asegura que ocupa todo el espacio disponible */
+}
+
+.column.is-narrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  min-height: 100vh; /* Ocupa al menos el 100% del alto del viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Opcional: centra horizontalmente */
+  padding: 3rem 1.5rem;
+  background-color: var(--background-color); /* Fondo azul */
+  color: var(--text-color); /* Texto blanco */
+}
+
+.profile-image {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 50%; 
+
+}
+
+
+.sobre-mi-image {
+  transform: scale(0.6); /* Escala la imagen al 50% de su tamaño */
+  transform-origin: center; /* Asegura que la escala se aplique desde el centro */
+  object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+#sobre-mi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Centra horizontalmente el contenido */
+  min-height: 100vh; /* Igual al resto de las secciones */
+  padding: 3rem 1.5rem; /* Mantén un espaciado adecuado */
+  position: relative; /* Mantén el contenido posicionado dentro */
+}
+
+#sobre-mi h1 {
+  margin: 0 auto; /* Centra el título horizontalmente */
+  text-align: center; /* Alinea el texto */
+  font-size: 2rem; /* Tamaño de fuente adaptable */
+}
+
+
+
+h1, h2, h3, h4, h5, h6, p, strong {
+  color: var(--text-color);
+}
+
+h1 {
+  padding-top: 40px;
+  color: var(--text-color);
+}
+
+h1, h2, h3, .title {
+  color: var(--text-color);
+}
+
+h3.title.is-4 {
+  padding-top: 20px;
+  color: var(--text-color);
+}
+
+/* Card styles */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: var(--secondary-background);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: 2px solid var(--text-color);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+p.card-header-title{
+  color: var(--text-color);
+}
+
+
+.card-content {
+  padding: 1.5rem;
+  color: var(--text-color);
+}
+
+.card-content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 4.5em;
+  color: var(--text-color);
+}
+
+
+.button {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 2px solid var(--primary-color);
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.tag {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 2px solid var(--primary-color);
+}
+
+.footer {
+  background-color: var(--secondary-background);
+  color: var(--text-color);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .card {
+    height: auto;
+  }
+}
+
+/* Ensure all text is white */
+p, span, a, li {
+  color: var(--text-color);
+}
+p.subtitle {
+  color: var(--text-color);
+}
+
+/* Social media buttons */
+.buttons .button {
+  background-color: var(--background-color);
+  border: 2px solid var(--primary-color);
+  color: var(--text-color);
+}
+
+.buttons .button:hover {
+  background-color: var(--primary-color);
+}
+
+  #sobre-mi {
+    padding: 60px 15px; /* Ajusta el padding para pantallas pequeñas */
+  }
+
+  #sobre-mi h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del título en móviles */
+  }
+
+  img {
+    max-width: 100%; /* Asegura que las imágenes no desborden la pantalla */
+    height: auto;
+  }
+
+  p {
+    font-size: 1rem; /* Ajusta el tamaño de texto en móviles */
+    line-height: 1.6;
+  }
+
+
+/* General para todas las secciones */
+section {
+  box-sizing: border-box; /* Garantiza un diseño consistente */
+  overflow: hidden; /* Evita que el contenido desborde */
+}
