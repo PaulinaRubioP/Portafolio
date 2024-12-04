@@ -123,6 +123,12 @@ h1, h2, h3, .title {
   color: var(--text-color);
 }
 
+h2.title.is-4 {
+  padding-top: 20px;
+  color: var(--text-color);
+}
+
+
 h3.title.is-4 {
   padding-top: 20px;
   color: var(--text-color);
